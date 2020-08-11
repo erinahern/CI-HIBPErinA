@@ -1,0 +1,62 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Aug 11, 2020 at 10:10 AM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `hibp`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hibp_check`
+--
+
+CREATE TABLE `hibp_check` (
+  `Email` varchar(255) NOT NULL,
+  `Name` varchar(100) DEFAULT NULL,
+  `Domain` varchar(255) DEFAULT NULL,
+  `BreachDate` date DEFAULT NULL,
+  `PwnCount` int(100) DEFAULT NULL,
+  `Description` varchar(255) DEFAULT NULL,
+  `DataClasses` varchar(255) DEFAULT NULL,
+  `IsVerified` tinyint(1) DEFAULT NULL,
+  `IsFabricated` tinyint(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `hibp_check`
+--
+
+INSERT INTO `hibp_check` (`Email`, `Name`, `Domain`, `BreachDate`, `PwnCount`, `Description`, `DataClasses`, `IsVerified`, `IsFabricated`) VALUES
+('erinahern2@gmail.com', 'Erin', 'Erin.com', '2020-08-03', 520, 'Personal email that got breached, personal information like bank details were stolen', '  Email addresses\r\n  Password hints\r\n  Passwords\r\n  Usernames', 1, 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `hibp_check`
+--
+ALTER TABLE `hibp_check`
+  ADD PRIMARY KEY (`Email`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

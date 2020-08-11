@@ -1,0 +1,54 @@
+
+h1 a{
+    text-decoration: none;
+    background-color: #aa0000;
+    color: #e6e6e6;
+    padding-top: 1%;
+    padding-right: 20%;
+    padding-bottom: 1%;
+    padding-left: 5%; 
+    width: 60%;
+    float: left;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+} 
+body {
+    background-color: #f2f2f2;
+}
+table{
+    margin-left: 7%;
+     background-color: #f2f2f2;
+    width: 80%;
+    align: center;
+}
+table, th, td {
+   border-bottom:  1px groove grey;
+
+}
+
+.submit{
+    background-color: lightsteelblue;
+    
+    margin-left: 40%;
+}
+button{
+    background-color: lightsteelblue;
+}
